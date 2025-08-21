@@ -1,0 +1,20 @@
+* {
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    color: white;
+}
+
+button {
+    background-color: blue;
+    color: white;
+}
+
+button:hover {
+    transition: 1s;
+    background-color: red;
+    color: black;
+}
