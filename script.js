@@ -1,5 +1,6 @@
 let acertos = 0;
 
+esconderDiv("telaFinal")
 esconderDiv("pergunta2");
 esconderDiv("pergunta3");
 esconderDiv("pergunta4");
@@ -41,11 +42,15 @@ document.querySelectorAll("#pergunta4 button").forEach(botao => {
 
 document.querySelectorAll("#pergunta5 button").forEach(botao => {
   botao.addEventListener('click', () => {
-    esconderDiv("pergunta5"); 
-     
-    if (botao.textContent.trim() === "206") acertos++;
-  alert("Você acertou" + acertos+ "/5" )
-});
+    esconderDiv("pergunta5");
+
+    if (botao.textContent.trim() === "206") {
+      acertos++;
+
+    }
+    alert("Você acertou:" + acertos + "/5")
+    mostrarDiv("telaFinal")
+  });
 
 });
 
